@@ -1,1 +1,9 @@
 /* Empty. Add your own CSS if you like */
+.bar-positive .button{
+  background-color: #056c6e ;
+  border-color: #056c6e ;
+}
+.bar-positive .button.activated{
+  background-color: #068689 ;
+  border-color: #068689 ;
+}

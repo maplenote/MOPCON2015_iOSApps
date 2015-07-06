@@ -167,7 +167,7 @@
   border-color: transparent;
   background: none;
 
-  &.button.active,
+  &.button.active, 
   &.button.activated {
     border-color: transparent;
     background: none;
@@ -180,7 +180,7 @@
     font-size: $button-large-icon-size;
   }
 }
-
+ 
 .button-clear {
   @include button-clear($button-default-border);
   @include transition(opacity .1s);

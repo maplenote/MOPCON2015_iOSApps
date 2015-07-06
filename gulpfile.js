@@ -25,7 +25,7 @@ gulp.task('sass', function(done) {
     .pipe(rename({ extname: '.min.css' }))
     .pipe(gulp.dest('./www/css/'))
     .on('end', done);
-});
+}); 
 
 gulp.task('watch', function() {
   gulp.watch(paths.sass, ['sass']);
