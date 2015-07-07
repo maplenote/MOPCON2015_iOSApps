@@ -41,16 +41,14 @@ angular.module('starter.controllers', [])
   };
 })
 
-.controller('agendaCtrl', function($scope) {
-  $scope.speakers = [
-    { title: 'Reggae', id: 1 },
-    { title: 'Chill', id: 2 },
-    { title: 'Dubstep', id: 3 },
-    { title: 'Indie', id: 4 },
-    { title: 'Rap', id: 5 },
-    { title: 'Cowbell', id: 6 }
-  ];
+.controller('agendaCtrl', function($scope,$http) {
+  $scope.agendaData = ''; 
+  $http.get('//gonsakon.github.io/MOPCON2015_iOSApps/www/js/testJson/agenda.json').success(function(data){
+    $scope.agendaData = data;
+     console.log($scope.agendaData);
+   });
 })
 
-.controller('agendaDdetailCtrl', function($scope, $stateParams) {
+.controller('agendaDdetailCtrl', function($scope, $routeParams) {
+  $scope.TalkerName = $routeParams.TalkerName;
 });
