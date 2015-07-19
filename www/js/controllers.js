@@ -13,42 +13,23 @@ angular.module('starter.controllers', [])
   $scope.loginData = {};
 
   // Create the login modal that we will use later
-  $ionicModal.fromTemplateUrl('templates/login.html', {
-    scope: $scope
-  }).then(function(modal) {
-    $scope.modal = modal;
-  });
-
-  // Triggered in the login modal to close it
-  $scope.closeLogin = function() {
-    $scope.modal.hide();
-  };
-
-  // Open the login modal
-  $scope.login = function() {
-    $scope.modal.show();
-  };
-
-  // Perform the login action when the user submits the login form
-  $scope.doLogin = function() {
-    console.log('Doing login', $scope.loginData);
-
-    // Simulate a login delay. Remove this and replace with your login
-    // code if using a login system
-    $timeout(function() {
-      $scope.closeLogin();
-    }, 1000);
-  };
 })
-
-.controller('agendaCtrl', function($scope,$http) {
-  $scope.agendaData = ''; 
-  $http.get('//gonsakon.github.io/MOPCON2015_iOSApps/www/js/testJson/agenda.json').success(function(data){
+.controller('agendaCtrl', function($scope,$http,agendaService) {
+  $scope.agendaData = '';
+  agendaService.getData().success(function(data){
     $scope.agendaData = data;
-     console.log($scope.agendaData);
-   });
+  });
 })
-
-.controller('agendaDdetailCtrl', function($scope, $routeParams) {
-  $scope.TalkerName = $routeParams.TalkerName;
+.controller('agendaDdetailCtrl' ,function($scope, $stateParams,agendaService) {
+  $scope.Detail = '';
+  agendaService.getData().success(function(data) {
+    for (var i = 0; i < data.Day1.length; i++) {
+      for(var j=0; j<data.Day1[i].Section.length;j++){
+        if (data.Day1[i].Section[j].id == $stateParams.id) {
+          $scope.Detail = data.Day1[i].Section[j];
+        }
+      }
+    }
+      // $scope.Detail = data.Day1.Section.get($stateParams.id);
+  });
 });

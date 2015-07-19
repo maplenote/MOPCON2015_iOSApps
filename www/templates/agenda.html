@@ -18,11 +18,14 @@
                     <div class="item item-divider">
                         {{row.Time}}
                     </div>
-                    <a class="item item-avatar item item-avatar item-text-wrap" href="#/app/agenda/1" ng-repeat="talker in row.Section ">
-                        <img src="{{talker.ImgUrl }}">
-                        <h2>{{talker.TalkerName}}</h2>
-                        <p>{{talker.SectionTitle }}</p>
-                    </a>
+                    <div ng-repeat="talker in row.Section ">
+                      <a class="item item-avatar item item-avatar item-text-wrap" href="#/app/agenda/{{talker.id}}" >
+                          <img src="{{talker.ImgUrl }}">
+                          <h2>{{talker.TalkerName}}</h2>
+                          <p>{{talker.SectionTitle }}</p>
+                      </a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
