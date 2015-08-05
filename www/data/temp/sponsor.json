@@ -1,0 +1,25 @@
+{
+  "isSucc":true,
+  "server": {
+    "updateAppFlag": false,
+    "lastUpdate":"2015-06-15 22:12:00"
+  },
+  "data":{
+     "article":[
+      {
+        "viewType":"image",
+        "image":"http://mopcon.org/2014/images/sponsor/ms.jpg",
+        "alt":"微軟",
+        "link":"http://www.microsoft.com/",
+        "content":"微軟公司 (那斯達克證交所上市代號︰MSFT)成立於1975年，微軟是全球科技產業的領航者，提供軟體、裝置、及資訊服務解決方案，幫助人們以及企業實現他們最大的潛能。身為政府、學校與企業最值得信賴的夥伴，微軟自1989年於台灣深耕以來，始終致力於幫助台灣提升創新力、競爭力以及促進經濟繁榮- 共同來亮點台灣！"
+      },
+      {
+        "viewType":"image",
+        "image":"http://mopcon.org/2014/images/sponsor/asuscloud.png",
+        "alt":"ASUS",
+        "link":"http://www.asuscloud.com/",
+        "content":"華碩雲端為華碩發展雲端服務的經營團隊，以資料為核心推動整合性創新，解決大量數位資料的管理並串聯軟硬體資源，滿足使用者從生產力到娛樂的雲端需求。華碩雲端於全球擁有諸多據點資料中心，並於雲端平台設置嚴謹的資安防護技術，為使用者及企業打造安全無虞的雲端空間；同時，華碩亦開放雲端平台資源，積極與各領域夥伴合作，加速產業整合與創新，豐富雲端生態圈的應用服務。"
+      }
+    ]
+  }
+}

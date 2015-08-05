@@ -1,0 +1,32 @@
+<ion-view view-title="議程表">
+	<ion-content>
+		<div class="button-bar bar-positive">
+			<a class="button activated">第一天</a>
+			<a class="button">第二天</a>
+		</div>
+		<div class="card">
+			<div ng-repeat="row in sessionData.day1">
+				<div ng-if="row.bulletin != '' ">
+					<div class="item item-divider">
+						{{row.startTime}} ~ {{row.endTime}}
+					</div>
+					<div class="item">
+						<h2>{{row.bulletin}}</h2>
+					</div>
+				</div>
+				<div ng-if="row.bulletin == '' ">
+					<div class="item item-divider">
+						{{row.startTime}} ~ {{row.endTime}}
+					</div>
+					<div ng-repeat="talker in row.section">
+						<a class="item item-avatar item item-avatar item-text-wrap" href="#/app/session/{{talker.id}}">
+							<img src="{{talker.image}}">
+							<h2>{{talker.talkerName}}</h2>
+							<p>{{talker.sectionTitle }}</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</ion-content>
+</ion-view>

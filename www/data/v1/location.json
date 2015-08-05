@@ -1,0 +1,37 @@
+{
+  "isSucc": true,
+  "server": {
+    "updateAppFlag": false,
+    "lastUpdate": "2015-07-26 12:43:00"
+  },
+  "data":{
+    "mopconInfo":{ 
+      "registerDate": null,
+      "sessionDate": {
+        "start": "2015-10-31",
+        "end": "2015-11-1"
+      },
+      "location": "高雄國際會議中心"
+    },
+    "map":{ 
+      "center": "高雄市鹽埕區中正四路274號", 
+      "zoom": 14,
+      "marker": {
+        "addr": "高雄市鹽埕區中正四路274號", 
+        "label": "MOPCON 2015"
+      }
+    },
+    "article": [ 
+      {
+        "image": "http://mopcon.org/2015/images/location/icck_01.JPG",
+        "title": "高鐵/火車/捷運",
+        "content": "<ol><li>左營高鐵站/高雄火車站搭捷運紅線</li><li>2.至捷運美麗島站換乘橘線往西子灣方向</li><li>3.捷運鹽埕埔站下車，二號出口步行約 250 公尺可至會場</li></ol>"
+      },
+      {
+        "image": null, 
+        "title": "公車",
+        "content": "歷史博物館0南(單邊停靠)、0北(單邊停靠)、11、25、33、56、60、76、77、82、建國幹線、91、214、219、248"
+      }
+    ]
+  }
+}

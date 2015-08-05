@@ -1,35 +1,47 @@
 angular.module('starter.controllers', [])
-
-.controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-  
-  // With the new view caching in Ionic, Controllers are only called
-  // when they are recreated or on app start, instead of every page change.
-  // To listen for when this page is active (for example, to refresh data),
-  // listen for the $ionicView.enter event:
-  //$scope.$on('$ionicView.enter', function(e) {
-  //});
-  
-  // Form data for the login modal
-  $scope.loginData = {};
-
-  // Create the login modal that we will use later
-})
-.controller('agendaCtrl', function($scope,$http,agendaService) {
-  $scope.agendaData = '';
-  agendaService.getData().success(function(data){
-    $scope.agendaData = data;
-  });
-})
-.controller('agendaDdetailCtrl' ,function($scope, $stateParams,agendaService) {
-  $scope.Detail = '';
-  agendaService.getData().success(function(data) {
-    for (var i = 0; i < data.Day1.length; i++) {
-      for(var j=0; j<data.Day1[i].Section.length;j++){
-        if (data.Day1[i].Section[j].id == $stateParams.id) {
-          $scope.Detail = data.Day1[i].Section[j];
+  .controller('appCtrl', function($scope,getDataServ) {
+    getDataServ.refreshAllData().then(function(){
+      $scope.menulists = [];
+      var localMenu = getDataServ.getMenu();
+      //customConfig 在 root 上，所以就不用 $rootScope 了 (少一層雙向綁定)
+      if(customConfig.menulists === undefined){
+        //TODO 異常
+      }
+      for(key in localMenu){
+        var item = localMenu[key];
+        if(customConfig.menulists[item] !== undefined)
+        {
+          $scope.menulists.push({
+            "url": item,
+            "title": customConfig.menulists[item]
+          });
         }
       }
+    });
+  })
+  .controller('sessionCtrl', function($scope, getDataServ) {
+    var sessionData = getDataServ.getCtrlData('session');
+    $scope.sessionData = sessionData;
+  })
+  .controller('sessionDetailCtrl', function($scope, $stateParams, getDataServ) {
+    var sessionData = getDataServ.getCtrlData('sessionDetail');
+    $scope.detail = {};
+    if(sessionData["no"+$stateParams.id] !== undefined){
+      $scope.detail = sessionData["no"+$stateParams.id];
     }
-      // $scope.Detail = data.Day1.Section.get($stateParams.id);
+  })
+  .controller('newsCtrl', function($scope, getDataServ) {
+
+  })
+  .controller('speakerCtrl', function($scope, getDataServ) {
+
+  })
+  .controller('sponsorCtrl', function($scope, getDataServ) {
+
+  })
+  .controller('locationCtrl', function($scope, getDataServ) {
+
+  })
+  .controller('communityCtrl', function($scope, getDataServ) {
+
   });
-});

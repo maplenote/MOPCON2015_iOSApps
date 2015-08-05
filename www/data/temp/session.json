@@ -1,0 +1,120 @@
+{
+  "isSucc":true,
+  "server": {
+    "updateAppFlag": false,
+    "lastUpdate":"2015-06-15 22:12:00"
+  },
+  "data":{
+    "day1": [
+      {
+        "startTime": "08:00",
+        "endTime": "08:45",
+        "talker": false,
+        "bulletin": "參加者報到",
+        "section": []
+      },
+      {
+        "startTime": "08:45",
+        "endTime": "09:00",
+        "talker": true,
+        "bulletin": "",
+        "section": [
+          {
+            "id": 1,
+            "place": "全部",
+            "image": "http://mopcon.org/2014/images/sponsor/asuscloud.png",
+            "sectionType": "活動",
+            "sectionTitle": "ASUS Cloud 贊助抽獎活動",
+            "sectionDescription": "由 ASUS Cloud 提供 ZenFone 手機為抽獎贈品喔！",
+            "talkId": null,
+            "talkerName": "Asus Cloud",
+            "talkerDescription": "華碩雲端為華碩發展雲端服務的經營團隊，以資料為核心推動整合性創新，解決大量數位資料的管理並串聯軟硬體資源，滿足使用者從生產力到娛樂的雲端需求。華碩雲端於全球擁有諸多據點資料中心，並於雲端平台設置嚴謹的資安防護技術，為使用者及企業打造安全無虞的雲端空間；同時，華碩亦開放雲端平台資源，積極與各領域夥伴合作，加速產業整合與創新，豐富雲端生態圈的應用服務。"
+          }
+        ]
+      },
+      {
+        "startTime": "09:00",
+        "endTime": "09:40",
+        "talker": true,
+        "bulletin": "",
+        "section": [
+          {
+            "id":2,
+            "place": "全部",
+            "image": "http://mopcon.org/2014/images/speakers/peterwu.jpg",
+            "sectionType": "技術",
+            "sectionTitle": "ASUS Cloud & the API enabled solutions",
+            "sectionDescription": "2008 年加入了華碩電腦集團，擔任華碩雲端股份有限公司CEO 一職，肩負著華碩發展雲端產業及技術的使命，將雲端服務帶到全球的消費及商業市場，並建構健康、教育、家庭等領域生態系統，逐步帶領著華碩雲端成為雲端領域的領導品牌。",
+            "talkerName": "吳漢章 (Peter Wu)",
+            "talkerDescription": "Introducing the ASUS Cloud Platform –A software-defined environment for data-driven smart applications –Major functions enabled by APIs"
+          }
+        ]
+      },
+      {
+        "startTime": "09:40",
+        "endTime": "09:50",
+        "talker": false,
+        "bulletin": "休息時間",
+        "section": []
+      },
+      {
+        "startTime": "09:50",
+        "endTime": "10:30",
+        "talker": true,
+        "bulletin": "",
+        "section": [
+          {
+            "id":3,
+            "place": "一廳",
+            "image": "http://mopcon.org/2014/images/speakers/KKBOX_drake_guan.jpg",
+            "sectionType": "技術",
+            "sectionTitle": "How does Netflix get built and triumphed?",
+            "sectionDescription": "這個世代，還有多少人會每天死守著第四台看？又有多少人在通勤時直接透過手機或平板看戲劇？ 傳統電視台壟斷的電視頻道，與新起的影音串流服務，鹿死誰手，熟勝熟敗，我們還不知道。 但是我們可以從技術的角度，來抽絲剝繭像 Netflix 這樣的影音服務是怎麼建造起來的。 這是我想與你們分享並討論的議題～",
+            "talkerName": "Drake (官順暉)",
+            "talkerDescription": "於電腦動畫產業服務期間，組織了一隻台灣動畫產業的研發團隊，發表了國際論文，參與制作了得獎動畫，成了 Pixar 軟體與技術的專家。還意外自經濟部獲頒青年創新希望獎，更不小心參與了 PyCon Taiwan 籌備委員之一。今年起，投入影音串流這個新戰場，以提供台灣一個值得擁有的影音串流服務為目標邁進。"
+          },
+          {
+            "id":4,
+            "place": "二廳",
+            "image": "http://mopcon.org/2014/images/speakers/ericsk.jpg",
+            "sectionType": "技術",
+            "sectionTitle": "使用 Microsoft Azure 雲端平臺規劃及建置高延展、高可靠性的應用系統",
+            "sectionDescription": "Microsoft Azure 是一個完全開放且彈性的雲端平台，支援多種程式語言及作業系統；此外也提供像是儲存體、SQL資料庫、DocumentDB (noSQL)、快取服務、媒體服務、CDN、巨量資料以及機器學習等服務元件，協助您打造具有高延展性、高可靠性的應用程式架構。這堂課將會介紹數個使用Microsoft Azure架構系統的模式及實作方式，除了幫助您瞭解Microsoft Azure平台之外，也能學習如何打造適合雲端平台的應用程式。",
+            "talkerName": "講者簡介",
+            "talkerDescription": "網路代號 ericsk，曾在中華電信從事網站以及 App 的開發工作，亦曾組織 Taipei GTUG 社群，並且積極參與台灣各種社群，熱愛軟體開發技術，特別在 web、cloud、mobile 領域有所涉獵，現任台灣微軟的應用技術開發經理 (Technical Evangelist)，持續與開發者社群互動。 講題標語: 快速、可靠、穩定的應用程式"
+          },
+          {
+            "id":5,
+            "place": "三廳",
+            "image": "http://mopcon.org/2014/images/speakers/hsu.jpg",
+            "sectionType": "營運",
+            "sectionTitle": "面對贏者全拿的APP市場開發者該怎麼成功 - 以 APP 手機遊戲市場為例",
+            "sectionDescription": "隨著智慧手機大行其道，App市場猶如火山噴發一般的快速成長。這個App市場是贏者全拿敗者一無所有，在這個競爭異常激烈的市場開發商該如何成功？從App市場中最賺錢丶最激烈的手機遊戲市場分析應該能給各位一些啟發。",
+            "talkerName": "徐德航",
+            "talkerDescription": "愛就贏總經理徐德航在遊戲業界資歷十年，曾任上海遊戲新幹線市場部主任、遊戲新幹線香港辦公室主任、智冠台北研發中心企劃部主任與智冠市場投資處主任。在長期接觸台灣獨立遊戲開發者後發現，遊戲大賣很難提前預測，擴散效應必須掌握天時地利與人和很難複製。因此愛就贏綜合創業育成、共同開發、遊戲營運、發行平台等，與上架的公司專案合作，共同創作遊戲，成為遊戲開發商的共同開發夥伴及產品共同擁有者"
+          }
+        ]
+      }
+    ],
+    "day2": [
+      {
+        "startTime": "09:15",
+        "endTime": "9:30",
+        "talker": true,
+        "bulletin": "",
+        "section": [
+          {
+            "id":6,
+            "place": "全部",
+            "image": "http://mopcon.org/2014/images/sponsor/ms.jpg",
+            "sectionType": "活動",
+            "sectionTitle": "Microsoft 贊助抽獎活動",
+            "sectionDescription": "有傳說中的 Microsoft Lumia 1520 手機可以抽喔！",
+            "talkerName": "Microsoft",
+            "talkerDescription": "微軟公司 (那斯達克證交所上市代號︰MSFT)成立於1975年，微軟是全球科技產業的領航者，提供軟體、裝置、及資訊服務解決方案，幫助人們以及企業實現他們最大的潛能。身為政府、學校與企業最值得信賴的夥伴，微軟自1989年於台灣深耕以來，始終致力於幫助台灣提升創新力、競爭力以及促進經濟繁榮- 共同來亮點台灣！"
+          }
+        ]
+      }
+    ]
+  }
+}
