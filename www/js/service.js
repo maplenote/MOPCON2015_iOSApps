@@ -81,7 +81,7 @@ angular.module('starter.services', [])
           .success( function(jsonData, status, headers, config) {
             if(jsonData.isSucc !== undefined
                 && jsonData.isSucc==true
-                && jsonData.server.appVersion == $rootScope.version) {
+                && jsonData.server.appVersion == customConfig.version) {
               //清除原本的資料
               localStorageServ.removeAllJson();
               localStorageServ.set('last.isSucc',true);
@@ -133,7 +133,7 @@ angular.module('starter.services', [])
             }
             else {
               localStorageServ.set('last.isSucc',false);
-              if(jsonData.server.app_version != $rootScope.version)
+              if(jsonData.server.app_version != customConfig.version)
               {
                 localStorageServ.set('last.errCode','E001');
               }
